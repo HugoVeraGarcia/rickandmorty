@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import SearchBox from "./SearchBox";
 import ResidentsList from './ResidentsList';
-import logo from '../assets/rickandmorty.gif'
+import logo from '../assets/rickandmorty2.gif'
 
 const LocationInfo = () => {
 const [locations, setLocations] = useState('');

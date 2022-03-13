@@ -3,14 +3,12 @@ import React, { useEffect, useState } from 'react';
 import alive from "../assets/alive.png";
 import unknown from "../assets/unknown.png";
 import dead from "../assets/dead.png"
-//import logo from '../assets/rickandmorty.gif'
 
 const ResidentInfo = ( { residentUrl }) => {
     const [resident, setResident] = useState({})
     useEffect(()=>{
         axios.get(residentUrl)
           .then(res => {
-            console.log('desde info', res.data)
             setResident(res.data)
           })
     },[ residentUrl ])
@@ -47,7 +45,3 @@ const ResidentInfo = ( { residentUrl }) => {
 };
 
 export default ResidentInfo;
-/*
-<img src={logo} className="app-logo" alt="logo" />
-
-*/
