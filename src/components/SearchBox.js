@@ -15,7 +15,7 @@ const SearchBox = ( {setLocations} ) => {
     };
 
     return (
-        <div>
+        <div className='search'>
             <input 
                 className='input_text' 
                 type='text'

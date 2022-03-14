@@ -15,7 +15,7 @@ useEffect(()=>{
 },[]);
 
     return (
-        <header className='locatioInfo_container'>
+        <header className='locationInfo_container'>
             <img src={logo} className="app-logo" alt="logo" />
             <SearchBox setLocations ={ setLocations } />
             <p className='title'>{locations.name}</p>
