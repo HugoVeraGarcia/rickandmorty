@@ -14,10 +14,6 @@ const SearchBox = ( {setLocations} ) => {
             } );            
     };
 
-    function handleKeyDown(e) {
-        if (e.key === 'Enter') {searchLocation()}
-      }
-
     return (
         <div>
             <input 
@@ -25,8 +21,7 @@ const SearchBox = ( {setLocations} ) => {
                 type='text'
                 onChange={ e => setLocationId(e.target.value)}
                 value = {locationId}
-                onKeyDown={handleKeyDown}
-                onClick={searchLocation}
+                
             />
             <button className='button' onClick={searchLocation}>Search</button>
         </div>

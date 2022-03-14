@@ -15,17 +15,17 @@ useEffect(()=>{
 },[]);
 
     return (
-        <div className='locatioInfo_container'>
+        <header className='locatioInfo_container'>
             <img src={logo} className="app-logo" alt="logo" />
             <SearchBox setLocations ={ setLocations } />
             <p className='title'>{locations.name}</p>
             <div className='locations_container'>
-                <p>Type: {locations.type}</p>
-                <p>{locations.dimension}</p>
-                <p>Population: {locations?.residents?.length}</p>
+                <p className='text_header'>Type: {locations.type}</p>
+                <p className='text_header'>{locations.dimension}</p>
+                <p className='text_header'>Population: {locations?.residents?.length}</p>
             </div>
             <ResidentsList locations = {locations.residents}/>
-        </div>
+        </header>
     );
 };
 

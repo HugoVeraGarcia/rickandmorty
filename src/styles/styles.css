@@ -28,6 +28,12 @@ body {
     padding: 20px;
     margin: 20px;
 }
+
+.text_header{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
 .title{
     font-size: 2rem;
     padding: 10px;
